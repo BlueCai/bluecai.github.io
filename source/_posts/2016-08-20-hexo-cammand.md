@@ -1,7 +1,8 @@
 ---
 title: hexo-常用命令
 date: 2016-08-20 18:18:33
-tags: hexo
+categories: 
+	- Hexo
 ---
 ## Hexo常用命令
 

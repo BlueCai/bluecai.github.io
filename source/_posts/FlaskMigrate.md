@@ -2,11 +2,11 @@
 title: Flask-Migrate的使用
 date: 2016-08-20 15:10:29
 tags:
-	-Flask
-	-Python
+	- Flask
+	- Python
 categories: 
-	-Python
-		-Flask
+	- Python
+	- Flask
 ---
 ### flask_migrate 
 
