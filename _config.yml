@@ -5,8 +5,8 @@
 # Site
 title: BlueCai's Notes
 subtitle: Work Harder
-description:
-author: BlueSky
+description: 无志者常立志，有志者立常志
+author: 立常志
 language: zh-Hans
 timezone:
 
@@ -70,5 +70,5 @@ avatar: /uploads/me.jpg
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: 
   type: git
-  repo: https://github.com/BlueCai/bluecai.github.io.git
-  branch: gh-pages
+  repo: git@github.com:BlueCai/bluecai.github.io.git
+  branch: master
