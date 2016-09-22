@@ -253,6 +253,127 @@
             
               
                 
+                <a class="post-title-link" href="/Datetime-format/" itemprop="url">
+                  常用时间格式化
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-22T22:04:55+08:00" content="2016-09-22">
+              2016-09-22
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C-基础/" itemprop="url" rel="index">
+                    <span itemprop="name">C# 基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="C-中的时间格式化"><a href="#C-中的时间格式化" class="headerlink" title="C#中的时间格式化"></a>C#中的时间格式化</h2><blockquote>
+<p>d 月中的某一天。一位数的日期没有前导零。<br>dd 月中的某一天。一位数的日期有一个前导零。</p>
+<p>M 月份数字。一位数的月份没有前导零。<br>MM 月份数字。一位数的月份有一个前导零。</p>
+<p>yyyy 包括纪元的四位数的年份。</p>
+<p>h 12 小时制的小时。一位数的小时数没有前导零。<br>hh 12 小时制的小时。一位数的小时数有前导零。<br>H 24 小时制的小时。一位数的小时数没有前导零。<br>HH 24 小时制的小时。一位数的小时数有前导零。</p>
+<p>m 分钟。一位数的分钟数没有前导零。<br>mm 分钟。一位数的分钟数有一个前导零。</p>
+<p>s 秒。一位数的秒数没有前导零。<br>ss 秒。一位数的秒数有一个前导零。</p>
+<p>f 秒的小数精度为一位。其余数字被截断。<br>ff 秒的小数精度为两位。其余数字被截断。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">String.Format(&quot;&#123;0:y yy yyy yyyy&#125;&quot;, dt);  // &quot;8 08 008 2008&quot;   year</div><div class="line">String.Format(&quot;&#123;0:M MM MMM MMMM&#125;&quot;, dt);  // &quot;3 03 Mar March&quot;  month</div><div class="line">String.Format(&quot;&#123;0:d dd ddd dddd&#125;&quot;, dt);  // &quot;9 09 Sun Sunday&quot; day</div><div class="line">String.Format(&quot;&#123;0:h hh H HH&#125;&quot;,     dt);  // &quot;4 04 16 16&quot;      hour 12/24</div><div class="line">String.Format(&quot;&#123;0:m mm&#125;&quot;,          dt);  // &quot;5 05&quot;            minute</div><div class="line">String.Format(&quot;&#123;0:s ss&#125;&quot;,          dt);  // &quot;7 07&quot;            second</div><div class="line">String.Format(&quot;&#123;0:f ff fff ffff&#125;&quot;, dt);  // &quot;1 12 123 1230&quot;   sec.fraction</div><div class="line">String.Format(&quot;&#123;0:F FF FFF FFFF&#125;&quot;, dt);  // &quot;1 12 123 123&quot;    without zeroes</div><div class="line">String.Format(&quot;&#123;0:t tt&#125;&quot;,          dt);  // &quot;P PM&quot;            A.M. or P.M.</div><div class="line">String.Format(&quot;&#123;0:z zz zzz&#125;&quot;,      dt);  // &quot;-6 -06 -06:00&quot;   time zone</div></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/CShaper-basic-1/" itemprop="url">
                   readonly、static、const
                 </a>
@@ -1268,7 +1389,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">7</span>
+              <span class="site-state-item-count">8</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
