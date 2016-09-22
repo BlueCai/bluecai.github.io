@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Git,GitHub," />
+  <meta name="keywords" content="C# 基础,易忘," />
 
 
 
@@ -84,33 +84,37 @@
 
 
 
-<meta name="description" content="GitBash 生成 SSH Key1.检查本地是否已经生成1$ cd ~/.ssh 或cd .ssh
+<meta name="description" content="readonly、static、const 的区别const
+const修饰的字段表示是常量，其本质上在编译完成，执行之前其字段的真实值已经被写在了DLL中了。只有在声明的时候才能改变其值
 
-如果没有则提示： No such file or directory如果有则进入~/.ssh路径下（ls查看当前路径文件，rm * 删除所有文件）
+readonly
+readonly表示只读的，其只有在声明的时候和构造函数中能被修改。通过编译后的代码可以看到，其实质是在构造函数中赋值的
 
-
-2. GitBash生成SSH Key12345678910$cd ~ 	#进入根目录$ ssh-keygen -t rsa -C &quot;xxx@">
+static
+static静态的，在一个地方修改，对所有的对象都是">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Windows下 Git配置SSH 并配置到GitHub">
-<meta property="og:url" content="http://yoursite.com/gitssh/index.html">
+<meta property="og:title" content="readonly、static、const">
+<meta property="og:url" content="http://yoursite.com/CShaper-basic-1/index.html">
 <meta property="og:site_name" content="BlueCai's Notes">
-<meta property="og:description" content="GitBash 生成 SSH Key1.检查本地是否已经生成1$ cd ~/.ssh 或cd .ssh
+<meta property="og:description" content="readonly、static、const 的区别const
+const修饰的字段表示是常量，其本质上在编译完成，执行之前其字段的真实值已经被写在了DLL中了。只有在声明的时候才能改变其值
 
-如果没有则提示： No such file or directory如果有则进入~/.ssh路径下（ls查看当前路径文件，rm * 删除所有文件）
+readonly
+readonly表示只读的，其只有在声明的时候和构造函数中能被修改。通过编译后的代码可以看到，其实质是在构造函数中赋值的
 
-
-2. GitBash生成SSH Key12345678910$cd ~ 	#进入根目录$ ssh-keygen -t rsa -C &quot;xxx@">
-<meta property="og:image" content="http://yoursite.com/imgs/gitssh-1.png">
-<meta property="og:updated_time" content="2016-08-20T10:50:49.554Z">
+static
+static静态的，在一个地方修改，对所有的对象都是">
+<meta property="og:updated_time" content="2016-09-22T14:02:19.712Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Windows下 Git配置SSH 并配置到GitHub">
-<meta name="twitter:description" content="GitBash 生成 SSH Key1.检查本地是否已经生成1$ cd ~/.ssh 或cd .ssh
+<meta name="twitter:title" content="readonly、static、const">
+<meta name="twitter:description" content="readonly、static、const 的区别const
+const修饰的字段表示是常量，其本质上在编译完成，执行之前其字段的真实值已经被写在了DLL中了。只有在声明的时候才能改变其值
 
-如果没有则提示： No such file or directory如果有则进入~/.ssh路径下（ls查看当前路径文件，rm * 删除所有文件）
+readonly
+readonly表示只读的，其只有在声明的时候和构造函数中能被修改。通过编译后的代码可以看到，其实质是在构造函数中赋值的
 
-
-2. GitBash生成SSH Key12345678910$cd ~ 	#进入根目录$ ssh-keygen -t rsa -C &quot;xxx@">
-<meta name="twitter:image" content="http://yoursite.com/imgs/gitssh-1.png">
+static
+static静态的，在一个地方修改，对所有的对象都是">
 
 
 
@@ -128,7 +132,7 @@
   };
 </script>
 
-  <title> Windows下 Git配置SSH 并配置到GitHub | BlueCai's Notes </title>
+  <title> readonly、static、const | BlueCai's Notes </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -268,7 +272,7 @@
             
             
               
-                Windows下 Git配置SSH 并配置到GitHub
+                readonly、static、const
               
             
           </h1>
@@ -280,8 +284,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-20T16:24:20+08:00" content="2016-08-20">
-              2016-08-20
+            <time itemprop="dateCreated" datetime="2016-09-22T21:56:24+08:00" content="2016-09-22">
+              2016-09-22
             </time>
           </span>
 
@@ -294,8 +298,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Git/" itemprop="url" rel="index">
-                    <span itemprop="name">Git</span>
+                  <a href="/categories/C-基础/" itemprop="url" rel="index">
+                    <span itemprop="name">C# 基础</span>
                   </a>
                 </span>
 
@@ -327,24 +331,19 @@
       
 
       
-        <h2 id="GitBash-生成-SSH-Key"><a href="#GitBash-生成-SSH-Key" class="headerlink" title="GitBash 生成 SSH Key"></a>GitBash 生成 SSH Key</h2><h3 id="1-检查本地是否已经生成"><a href="#1-检查本地是否已经生成" class="headerlink" title="1.检查本地是否已经生成"></a>1.检查本地是否已经生成</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> ~/.ssh 或<span class="built_in">cd</span> .ssh</div></pre></td></tr></table></figure>
-<blockquote>
-<p>如果没有则提示： No such file or directory<br>如果有则进入~/.ssh路径下（ls查看当前路径文件，rm * 删除所有文件）</p>
+        <h2 id="readonly、static、const-的区别"><a href="#readonly、static、const-的区别" class="headerlink" title="readonly、static、const 的区别"></a>readonly、static、const 的区别</h2><h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><blockquote>
+<p>const修饰的字段表示是常量，其本质上在编译完成，执行之前其字段的真实值已经被写在了DLL中了。只有在声明的时候才能改变其值</p>
 </blockquote>
-<p><img src="/imgs/gitssh-1.png" alt=""></p>
-<h3 id="2-GitBash生成SSH-Key"><a href="#2-GitBash生成SSH-Key" class="headerlink" title="2. GitBash生成SSH Key"></a>2. GitBash生成SSH Key</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$cd</span> ~ 	<span class="comment">#进入根目录</span></div><div class="line">$ ssh-keygen -t rsa -C <span class="string">"xxx@mm.com"</span>		<span class="comment">#填写自己的邮件地址</span></div><div class="line">Generating public/private rsa key pair.</div><div class="line">Enter file <span class="keyword">in</span> <span class="built_in">which</span> to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   <span class="comment">#不填直接回车</span></div><div class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):   <span class="comment">#输入密码（可以为空）</span></div><div class="line">Enter same passphrase again:   <span class="comment">#再次确认密码（可以为空）</span></div><div class="line">Your identification has been saved <span class="keyword">in</span> /c/Users/xxxx_000/.ssh/id_rsa.   <span class="comment">#生成的密钥</span></div><div class="line">Your public key has been saved <span class="keyword">in</span> /c/Users/xxxx_000/.ssh/id_rsa.pub.  <span class="comment">#生成的公钥</span></div><div class="line">The key fingerprint is:</div><div class="line">e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com</div></pre></td></tr></table></figure>
-<blockquote>
-<p>本机已完成ssh key设置，其存放路径为：<strong>c:/Users/xxxx_000/.ssh/</strong>下。<br>可生成ssh key自定义名称的密钥，默认id_rsa。</p>
+<h3 id="readonly"><a href="#readonly" class="headerlink" title="readonly"></a>readonly</h3><blockquote>
+<p>readonly表示只读的，其只有在声明的时候和构造函数中能被修改。<em>通过编译后的代码可以看到，其实质是在构造函数中赋值的</em></p>
 </blockquote>
-<h3 id="3-添加SSH-Key到GitHub"><a href="#3-添加SSH-Key到GitHub" class="headerlink" title="3. 添加SSH Key到GitHub"></a>3. 添加SSH Key到GitHub</h3><ol>
-<li>在GitHub 中先登录。然后Settings–&gt;SSH Keys–&gt;Add SSH Key</li>
-<li>复制id_rsa.pub中的公匙内容。<blockquote>
-<p>2.1 进入c:/Users/xxxx_000/.ssh/目录下，打开id_rsa.pub文件，全选复制公钥内容。<br>2.2 Title自定义，将公钥粘贴到GitHub中Add an SSH key的key输入框，最后“Add Key”。</p>
+<h3 id="static"><a href="#static" class="headerlink" title="static"></a>static</h3><blockquote>
+<p>static静态的，在一个地方修改，对所有的对象都是有效的。其使用类名.字段名来访问的。</p>
 </blockquote>
-</li>
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><ol>
+<li>static readonly 对所有的对象都是有效的，只读的。其使用对象.字段名来访问。注意：和readonly不同的是，其只有在声明的时候和静态构造函数中才可以赋值</li>
+<li>const隐藏着static，所以static和const修饰符不能同时使用</li>
 </ol>
-<h3 id="4-配置账户"><a href="#4-配置账户" class="headerlink" title="4. 配置账户"></a>4. 配置账户</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ git config --global user.name “your_username”  <span class="comment">#设置用户名</span></div><div class="line">$ git config --global user.email “your_registered_github_Email”  <span class="comment">#设置邮箱地址</span></div></pre></td></tr></table></figure>
-<h3 id="5-测试配置"><a href="#5-测试配置" class="headerlink" title="5. 测试配置"></a>5. 测试配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ ssh -T git@github.com</div><div class="line">The authenticity of host <span class="string">'github.com (192.30.252.129)'</span> can<span class="string">'t be established.</span></div><div class="line">RSA key fingerprint is 16:27:xx:xx:xx:xx:xx:4d:eb:df:a6:48.</div><div class="line">Are you sure you want to continue connecting (yes/no)? yes  #确认你是否继续联系，输入yes</div><div class="line">Warning: Permanently added 'github.com,192.30.252.129<span class="string">' (RSA) to the list of known hosts.</span></div><div class="line">Enter passphrase for key '/c/Users/xxxx_000/.ssh/id_rsa<span class="string">':  #生成ssh kye是密码为空则无此项，若设置有密码则有此项且，输入生成ssh key时设置的密码即可。</span></div><div class="line">Hi xxx! You've successfully authenticated, but GitHub does not provide shell access. <span class="comment">#出现词句话，说明设置成功。</span></div></pre></td></tr></table></figure>
 
       
     </div>
@@ -366,9 +365,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Git/" rel="tag">#Git</a>
+            <a href="/tags/C-基础/" rel="tag">#C# 基础</a>
           
-            <a href="/tags/GitHub/" rel="tag">#GitHub</a>
+            <a href="/tags/易忘/" rel="tag">#易忘</a>
           
         </div>
       
@@ -377,17 +376,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/FlaskMigrate/" rel="next" title="Flask-Migrate的使用">
-                <i class="fa fa-chevron-left"></i> Flask-Migrate的使用
+              <a href="/regex/" rel="next" title="正则常用语法">
+                <i class="fa fa-chevron-left"></i> 正则常用语法
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/hexo-cammand/" rel="prev" title="hexo-常用命令">
-                hexo-常用命令 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -501,7 +496,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#GitBash-生成-SSH-Key"><span class="nav-number">1.</span> <span class="nav-text">GitBash 生成 SSH Key</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-检查本地是否已经生成"><span class="nav-number">1.1.</span> <span class="nav-text">1.检查本地是否已经生成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-GitBash生成SSH-Key"><span class="nav-number">1.2.</span> <span class="nav-text">2. GitBash生成SSH Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-添加SSH-Key到GitHub"><span class="nav-number">1.3.</span> <span class="nav-text">3. 添加SSH Key到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-配置账户"><span class="nav-number">1.4.</span> <span class="nav-text">4. 配置账户</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-测试配置"><span class="nav-number">1.5.</span> <span class="nav-text">5. 测试配置</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#readonly、static、const-的区别"><span class="nav-number">1.</span> <span class="nav-text">readonly、static、const 的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#const"><span class="nav-number">1.1.</span> <span class="nav-text">const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#readonly"><span class="nav-number">1.2.</span> <span class="nav-text">readonly</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#static"><span class="nav-number">1.3.</span> <span class="nav-text">static</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注意"><span class="nav-number">1.4.</span> <span class="nav-text">注意</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
